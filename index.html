@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroHub - Welcome</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("./public/images/image.jpeg"); /* Update this path if necessary */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.85); /* Slightly more opaque background */
+            padding: 4rem 3rem;
+            border-radius: 16px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+            width: 90%;
+            max-width: 900px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h1 {
+            font-size: 4rem;
+            color: #ffcc00; /* Gold color */
+            margin-bottom: 1.5rem;
+            animation: slideIn 1s ease-in-out;
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        p {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            color: #ddd;
+        }
+        .highlight {
+            color: #ff6600; /* Bright orange */
+            font-weight: bold;
+        }
+        .buttons {
+            margin-top: 2.5rem;
+        }
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            background-color: #28a745;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            margin: 0 0.75rem;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 1.2rem;
+        }
+        .buttons a:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./public/images/ahad_logostore.jpeg" alt="" width="350px">
+        <h1>Welcome to ElectroHub!</h1>
+        <p>Your one-stop shop for all <span class="highlight">electronic gadgets</span> and accessories.</p>
+        <p>Discover our wide range of products and enjoy <span class="highlight">exclusive deals</span>.</p>
+        <div class="buttons">
+            <a href="sing-in.html">Sign In</a>
+            <a href="sing-out.html">Sign Up</a>
+        </div>
+    </div>
+    <!-- <script type="module" src="main.js"></script> -->
+</body>
+</html>

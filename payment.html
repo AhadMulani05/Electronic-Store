@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .payment-button {
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .payment-button:hover {
+            background-color: #3367d6;
+        }
+
+        .payment-button:active {
+            transform: translateY(2px);
+        }
+
+        #googlePay {
+            background-color: #4285F4;
+        }
+
+        #phonePe {
+            background-color: #5E17EB;
+        }
+
+        #paytm {
+            background-color: #002970;
+        }
+
+        #cashOnDelivery {
+            background-color: #FF5722;
+          
+        }
+        #cash{
+            color: white;
+            text-decoration-line: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards" />
+    <h1>Choose Your Payment Method</h1>
+    
+    <button class="payment-button" id="googlePay">Pay with Google Pay</button>
+    <button class="payment-button" id="phonePe">Pay with PhonePe</button>
+    <button class="payment-button" id="paytm">Pay with Paytm</button>
+    <button class="payment-button" id="cashOnDelivery"><a id="cash" href="new.html">Cash on Delivery</a></button>
+
+    <script>
+        document.getElementById('googlePay').addEventListener('click', function() {
+            alert('Redirecting to Google Pay...');
+            window.location.href = 'https://pay.google.com'; // Replace with your actual payment processing URL
+        });
+
+        document.getElementById('phonePe').addEventListener('click', function() {
+            alert('Redirecting to PhonePe...');
+            window.location.href = 'https://www.phonepe.com'; // Replace with your actual payment processing URL
+        });
+
+        document.getElementById('paytm').addEventListener('click', function() {
+            alert('Redirecting to Paytm...');
+            window.location.href = 'https://paytm.com'; // Replace with your actual payment processing URL
+        });
+
+        document.getElementById('cashOnDelivery').addEventListener('click', function() {
+            alert('Thank you for choosing Cash on Delivery!');
+            window.location.href = 'new.html'; // Redirect to thank you page
+            alert(" Your order will be delivered earlier than expected.")
+        });
+    </script>
+</body>
+</html>

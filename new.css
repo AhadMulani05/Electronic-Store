@@ -1,0 +1,60 @@
+.slider {
+    width: 100%;
+    overflow: hidden;
+    margin-left: 30px;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .info {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .info h1{
+    font-size: 5rem;
+    margin-bottom: 10px;
+  }
+  
+  .info p {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #1e1f23;
+  }
+  
+  .image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .image img {
+    max-width: 70%;
+    height: auto;
+  }
+
+  .newPrice {
+    text-decoration: line-through;
+  }
+  
+.Prices{
+    display: flex;
+    gap: 10px;
+}
+
+.shownow {
+  text-transform: upperase;
+  text-decoration: underline;
+  font-size: 15px;
+  cursor: pointer;
+}
